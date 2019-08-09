@@ -14,6 +14,6 @@ public class UUIDKeyGenerator implements UrlKeyGenerator {
 			throw new NullPointerException("originalUrl");
 		}
 
-		return UUID.fromString(originalUrl).toString();
+		return UUID.randomUUID().toString();
 	}
 }
